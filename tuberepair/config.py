@@ -1,6 +1,6 @@
 # -- DEV ZONE -- #
 # You can change this to anything
-import os, random, string
+import os, random, string, socket
 from modules import helpers
 from requests_cache import RedisCache
 VERSION = "v0.0.8-beta"
@@ -26,7 +26,7 @@ else:
     USE_REDIS = False
 
 if USE_REDIS:
-    backend = RedisCache(host=OSEnv["REDIS_HOST"], port=OSEnv["REDIS_PORT"])
+    backend = RedisCache(host=socket.gethostbyname(OSEnv["REDIS_HOST"]), port=OSEnv["REDIS_PORT"])
 else:
     backend = 'sqlite'
 
