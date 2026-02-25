@@ -127,7 +127,7 @@ cd tuberepairdocker/tuberepair
 # You can just skip to pip, but for good measures.
 virtualenv tuberepair
 source tuberepair/bin/activate
-pip install -r requirements.txt
+pip install -r ../requirements.txt
 
 # Running
 python main.py
