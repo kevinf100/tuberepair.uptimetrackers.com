@@ -49,10 +49,10 @@ cp ./example/docker-compose-example.yml ./example/docker-compose.yml
 Next you'll need to edit the .env file or you can edit the docker-compose.yml directly.  
 The .env in example is the bare minimum you need for the server to run.  
 You can always add more to it.  
-#### If your NOT running docker rootless
+#### If you are NOT running docker rootless
 Uncomment the lines in docker-compose.yml that say to uncomment it (Lines 38 and 56) and comment that lines above them (Lines 37 and 55).
 Comment the user USERID line (line 3) in .env.
- #### If your ARE running docker rootless
+ #### If you ARE running docker rootless
 Get your userid
 ```bash
 id -u
@@ -77,7 +77,7 @@ Make sure you have Linux and [docker](https://docs.docker.com/engine/install/).
 git clone https://github.com/kevinf100/tuberepair.uptimetrackers.com
 mv tuberepair.uptimetrackers.com/ tuberepairdocker/
 cd tuberepairdocker
-cp ./example/.env ../
+cp ./example/.env ./
 cp ./example/docker-compose-home-example.yml ./example/docker-compose.yml 
 ```
 ### docker-compose setup
