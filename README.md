@@ -42,7 +42,7 @@ Make sure you have Linux, ports 80 and 443 open, [docker](https://docs.docker.co
 git clone https://github.com/kevinf100/tuberepair.uptimetrackers.com
 mv tuberepair.uptimetrackers.com/ tuberepairdocker/
 cd tuberepairdocker
-cp ./example/.env ../
+cp ./example/.env ./
 cp ./example/docker-compose-example.yml ./example/docker-compose.yml 
 ```
 ### docker-compose setup
